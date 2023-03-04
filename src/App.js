@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import { OpenaiAPI } from './api/openai.api';
 import './App.css';
 
 function App() {
+  const [openaiResults, setOpenaiResults] = useState("resultados aqui");
+  const [inputText, setInputText] = useState("");
+
+  const handleChange = (e) => {
+    setInputText(e.target.value);
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    async function ProcessOpenaiResults() {
+      const result = await OpenaiAPI.getOpenaiResults(inputText);
+      setOpenaiResults(result);
+    }
+    ProcessOpenaiResults();
+    setInputText("");
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <p>Hola, ejemplo de introduccion.</p>
+        <form onSubmit={handleSubmit}>
+          <input placeholder='Escribe aqui' onChange={handleChange} value={inputText}></input>
+          <br/><br/>
+          <button>
+            Preguntar
+          </button>
+          <br/>
+          <div>{openaiResults}</div>
+        </form>
+      </div>
+    </>
   );
 }
 
