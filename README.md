@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Asistente Virtual
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based virtual assistant that uses the OpenAI API to provide a customized chat interface for a small Christian group. The assistant can answer questions related to the group, provide information about upcoming events, and offer advice and encouragement based on Christian principles. The app is located at https://zingy-tanuki-8b1fa8.netlify.app/ 
 
-## Available Scripts
+## Features
+- Uses the OpenAI API to generate natural language responses to user input.
+- Provides information about the Christian group, including its objectives, and upcoming events.
+- Offers advice and encouragement based on Christian principles and values.
 
-In the project directory, you can run:
+## Usage
 
-### `npm start`
+To use the virtual assistant, simply visit the deployed site or run the app locally on your machine. The app requires a connection to the OpenAI API to function properly, so you'll need to have an API key from OpenAI in order to use the chat functionality.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Once you've entered your API key, you can begin chatting with the virtual assistant by typing your questions or comments into the chat interface. The assistant will generate a natural language response based on the input and provide additional information or advice as needed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
+To install the virtual assistant on your machine, simply clone the repository and run `npm install` to install the necessary dependencies. You'll also need to create a `.env` file with your OpenAI API key, like so:
+```
+REACT_APP_OPENAI_API_KEY=your_api_key_here
+```
+Once you've set up the API key, you can run `npm start` to start the development server and view the app in your browser.
 
-### `npm test`
+## License
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the GNU General Public License v3.0. For more information about this license, please visit: https://www.gnu.org/licenses/gpl-3.0.en.html
